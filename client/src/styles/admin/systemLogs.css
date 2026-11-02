@@ -1,0 +1,246 @@
+
+.system-logs-page {
+    padding: 30px;
+    color: #292820;
+    background: #f7f6f2;
+    min-height: 100%;
+}
+
+.system-logs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.system-logs-eyebrow {
+    color: #a18455;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.system-logs-header h1 {
+    margin: 8px 0;
+    font-size: 30px;
+    font-weight: 650;
+}
+
+.system-logs-header p,
+.system-logs-toolbar p {
+    margin: 0;
+    color: #858176;
+    font-size: 13px;
+}
+
+.system-logs-refresh {
+    border: 1px solid #a18455;
+    background: #a18455;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.system-logs-refresh:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.system-logs-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 26px;
+}
+
+.system-log-stat {
+    background: #fff;
+    border: 1px solid #eae7df;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.system-log-stat span {
+    display: block;
+    color: #777368;
+    font-size: 12px;
+}
+
+.system-log-stat strong {
+    display: block;
+    margin: 12px 0 7px;
+    font-size: 29px;
+    font-weight: 650;
+}
+
+.system-log-stat small {
+    color: #999386;
+    font-size: 11px;
+}
+
+.system-logs-content {
+    background: #fff;
+    border: 1px solid #eae7df;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.system-logs-toolbar {
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #eeeae2;
+}
+
+.system-logs-toolbar h2 {
+    margin: 0 0 6px;
+    font-size: 17px;
+}
+
+.system-logs-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.system-logs-filters input,
+.system-logs-filters select {
+    border: 1px solid #e3dfd5;
+    background: #fff;
+    color: #37352e;
+    border-radius: 7px;
+    padding: 11px 12px;
+    font-size: 12px;
+    outline: none;
+}
+
+.system-logs-filters input {
+    width: 260px;
+}
+
+.system-logs-filters input:focus,
+.system-logs-filters select:focus {
+    border-color: #a18455;
+}
+
+.system-logs-table-wrap {
+    overflow-x: auto;
+}
+
+.system-logs-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 12px;
+}
+
+.system-logs-table th {
+    padding: 15px 18px;
+    background: #faf9f6;
+    color: #797468;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.system-logs-table td {
+    padding: 16px 18px;
+    border-top: 1px solid #f0eee8;
+    white-space: nowrap;
+}
+
+.system-logs-table tbody tr:hover {
+    background: #fcfbf8;
+}
+
+.system-log-date {
+    color: #777368;
+}
+
+.system-log-endpoint {
+    color: #47443b;
+    font-family: Consolas, monospace;
+}
+
+.system-log-method,
+.system-log-status,
+.system-log-level {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.system-log-method {
+    background: #f0eee8;
+    color: #655d4e;
+}
+
+.method-get {
+    background: #e8f4ed;
+    color: #28734a;
+}
+
+.method-post {
+    background: #eaf0fc;
+    color: #355eaa;
+}
+
+.method-put,
+.method-patch {
+    background: #fff2dc;
+    color: #94651b;
+}
+
+.method-delete {
+    background: #fbe9e7;
+    color: #b43e34;
+}
+
+.status-success,
+.level-info {
+    background: #e8f4ed;
+    color: #28734a;
+}
+
+.status-warning,
+.level-warning {
+    background: #fff2dc;
+    color: #94651b;
+}
+
+.status-error,
+.level-error {
+    background: #fbe9e7;
+    color: #b43e34;
+}
+
+.system-logs-message {
+    padding: 45px 20px;
+    text-align: center;
+    color: #827d71;
+    font-size: 13px;
+}
+
+.system-logs-error {
+    color: #b43e34;
+}
+
+.system-logs-error button {
+    display: block;
+    margin: 14px auto 0;
+    padding: 9px 15px;
+    border: 1px solid #a18455;
+    border-radius: 6px;
+    background: #fff;
+    color: #80653d;
+    cursor: pointer;
+}

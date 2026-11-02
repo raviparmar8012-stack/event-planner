@@ -1,0 +1,82 @@
+.package-card{
+    width: 350px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.package-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.package-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.package-content{
+    padding:20px;
+}
+
+.package-content h3{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.package-content p{
+    margin:8px 0;
+    color:#555;
+}
+
+.package-includes{
+    margin:15px 0;
+}
+
+.package-includes p{
+    color:#2e7d32;
+    font-size:15px;
+}
+
+.package-content h4{
+    color:#ff5722;
+    font-size:24px;
+    margin:15px 0;
+}
+
+.package-buttons{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+}
+
+.details-btn,
+.package-btn{
+    flex:1;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.details-btn{
+    background:#eeeeee;
+}
+
+.details-btn:hover{
+    background:#d6d6d6;
+}
+
+.package-btn{
+    background:#ff5722;
+    color:white;
+}
+
+.package-btn:hover{
+    background:#e64a19;
+}

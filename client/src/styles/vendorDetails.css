@@ -1,0 +1,293 @@
+        /* VENDOR DETAILS — MATCH VENUE THEME */
+
+.vendor-details-page {
+    min-height: 100vh;
+    padding: 50px 60px 80px;
+    background: radial-gradient(circle at top right, rgba(245,158,11,.08), transparent 35%), #f8f5ef;
+    color: #111827;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vendor-details-page *,
+.vendor-details-page *::before,
+.vendor-details-page *::after {
+    box-sizing: border-box;
+}
+
+.vendor-details-page > h1 {
+    max-width: 1200px;
+    margin: 0 auto 24px;
+    color: #0f172a;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.vendor-details {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main card */
+
+.vendor-details-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 220px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e7e5e0;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(15,23,42,.04);
+}
+
+/* Image */
+
+.vendor-detail-image-section {
+    position: relative;
+    min-width: 0;
+    min-height: 220px;
+    overflow: hidden;
+    background: linear-gradient(135deg,#e2e8f0,#f8fafc);
+}
+
+.vendor-detail-image-section > img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.vendor-image-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    background: linear-gradient(135deg,#e2e8f0,#f8fafc);
+    color: #64748b;
+    font-size: 12px;
+}
+
+.vendor-image-placeholder span:first-child {
+    font-size: 40px;
+}
+
+/* Basic information */
+
+.vendor-basic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    padding: 25px;
+    background: #fff;
+}
+
+.vendor-basic-info h2 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -.4px;
+}
+
+.vendor-basic-info p {
+    margin: 4px 0;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.vendor-basic-info strong {
+    color: #475569;
+    font-weight: 700;
+}
+
+/* Information cards */
+
+.vendor-details-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.vendor-details-info > section {
+    min-width: 0;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e7e5e0;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(15,23,42,.04);
+}
+
+.vendor-details-info > section h2 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -.3px;
+}
+
+.vendor-details-info > section h2::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 9px;
+    border-radius: 3px;
+    background: #f59e0b;
+}
+
+.vendor-details-info > section > p {
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Services and Suitable For */
+
+.vendor-details-info > section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vendor-details-info > section ul li {
+    min-width: 0;
+    padding: 9px 10px;
+    background: #fafaf9;
+    border: 1px solid #eceae6;
+    border-radius: 6px;
+    color: #334155;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.vendor-details-info > section ul li::before {
+    content: "✓";
+    margin-right: 6px;
+    color: #d97706;
+    font-weight: 900;
+}
+
+/* Suitable For spans full width, like Venue Events */
+
+.vendor-details-info > section:nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+/* Why Choose */
+
+.vendor-details-info > section.vendor-why-section {
+    grid-column: 1 / -1;
+    margin-top: 0;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #e7e5e0;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(15,23,42,.04);
+}
+
+.vendor-details-info > section.vendor-why-section h2 {
+    margin-bottom: 10px;
+}
+
+.vendor-details-info > section.vendor-why-section h2::before {
+    display: none;
+}
+
+.vendor-details-info > section.vendor-why-section > p {
+    margin: 0 0 20px;
+    color: #667085;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.vendor-why-grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 12px;
+}
+
+.vendor-why-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 16px;
+    background: #faf9f7;
+    border: 1px solid #eee7de;
+    border-radius: 8px;
+    transition: transform .2s ease, border-color .2s ease;
+}
+
+.vendor-why-card:hover {
+    transform: translateY(-2px);
+    border-color: #fed7aa;
+}
+
+.vendor-why-card h3 {
+    margin: 0 0 8px;
+    color: #0b1f33;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.vendor-why-card p {
+    margin: 0;
+    color: #667085;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* Booking button */
+
+.book-vendor-btn {
+    display: block;
+    width: fit-content;
+    margin: 14px auto 0;
+    padding: 13px 22px;
+    background: #f59e0b;
+    color: #111827;
+    border: 1px solid #f59e0b;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.book-vendor-btn:hover {
+    background: #d97706;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Loading / error */
+
+.vendor-details-message {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #e7e5e0;
+    border-radius: 10px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+}

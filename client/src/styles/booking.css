@@ -1,0 +1,509 @@
+
+    /* ========================================
+       EVENT HUB - BOOKING PAGE
+    ======================================== */
+
+.booking-page {
+    min-height: 100vh;
+    padding: 55px 24px 70px;
+    background:
+            radial-gradient(circle at top left, #fff0df 0, transparent 32%),
+            #f7f7fb;
+    color: #20243a;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.booking-page *,
+.booking-page *::before,
+.booking-page *::after {
+    box-sizing: border-box;
+}
+
+.booking-container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   PAGE HEADER
+======================================== */
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.booking-header h1 {
+    margin: 0 0 12px;
+    color: #20243a;
+    font-family: inherit;
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.booking-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #73778b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ========================================
+   MAIN LAYOUT
+======================================== */
+
+.booking-main {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.35fr);
+    align-items: start;
+    gap: 30px;
+}
+
+/* ========================================
+   VENDOR / PACKAGE CARD
+======================================== */
+
+.booking-vendor-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #ececf3;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(32, 36, 58, 0.07);
+}
+
+.booking-vendor-image {
+    width: 100%;
+    height: 265px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #fce6d1, #e8e9f8);
+}
+
+.booking-vendor-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.booking-vendor-card:hover .booking-vendor-image img {
+    transform: scale(1.035);
+}
+
+.booking-vendor-content {
+    padding: 26px;
+}
+
+.booking-vendor-category {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 7px 12px;
+    border-radius: 30px;
+    background: #fff0e4;
+    color: #c45b18;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.booking-vendor-content h2 {
+    margin: 0 0 15px;
+    color: #20243a;
+    font-family: inherit;
+    font-size: 25px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.booking-vendor-location,
+.booking-vendor-rating {
+    margin: 10px 0;
+    color: #73778b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.booking-vendor-price {
+    margin: 18px 0;
+    color: #d66b26;
+    font-size: 25px;
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+.booking-vendor-highlights {
+    display: grid;
+    gap: 12px;
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeF4;
+}
+
+.booking-vendor-highlights p {
+    display: flex;
+    gap: 9px;
+    margin: 0;
+    color: #50556b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ========================================
+   BOOKING FORM CARD
+======================================== */
+
+.booking-form-card {
+    min-width: 0;
+    padding: 34px;
+    background: #ffffff;
+    border: 1px solid #ececf3;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(32, 36, 58, 0.07);
+}
+
+.booking-form-card > h2 {
+    margin: 0 0 27px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeF4;
+    color: #20243a;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* ========================================
+   FORM FIELDS
+======================================== */
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+}
+
+.booking-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.booking-field label {
+    display: block;
+    color: #34384d;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* Inputs, dropdowns and textareas */
+
+.booking-page .booking-field input,
+.booking-page .booking-field select,
+.booking-page .booking-field textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 49px;
+    margin: 0;
+    padding: 13px 15px;
+    border: 1px solid #dfe1eb;
+    border-radius: 10px;
+    outline: none;
+    background-color: #fcfcfe;
+    color: #292d42;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    box-shadow: none;
+    transition:
+            border-color 0.2s ease,
+            box-shadow 0.2s ease,
+            background-color 0.2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.booking-page .booking-field input::placeholder,
+.booking-page .booking-field textarea::placeholder {
+    color: #a0a3b2;
+    opacity: 1;
+}
+
+/* Focus state */
+
+.booking-page .booking-field input:focus,
+.booking-page .booking-field select:focus,
+.booking-page .booking-field textarea:focus {
+    border-color: #e57a35;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(229, 122, 53, 0.12);
+    outline: none;
+}
+
+/* Read-only fields */
+
+.booking-page .booking-field input[readonly] {
+    background-color: #f2f3f8;
+    color: #666b80;
+    cursor: default;
+}
+
+/* Disabled fields */
+
+.booking-page .booking-field input:disabled,
+.booking-page .booking-field select:disabled,
+.booking-page .booking-field textarea:disabled {
+    background-color: #f2f3f8;
+    color: #777b8c;
+    cursor: not-allowed;
+}
+
+/* Dropdown cursor */
+
+.booking-page .booking-field select {
+    cursor: pointer;
+}
+
+/* ========================================
+   EVENT LOCATION AND MESSAGE TEXTAREAS
+======================================== */
+
+/* Editable textareas with consistent styling */
+
+.booking-page .booking-field textarea,
+.booking-page textarea[name="eventLocation"],
+.booking-page textarea[name="message"] {
+    width: 100%;
+    min-width: 0;
+    min-height: 125px;
+    padding: 13px 15px;
+    border: 1px solid #dfe1eb;
+    border-radius: 10px;
+    background-color: #fcfcfe;
+    color: #292d42;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+    vertical-align: top;
+    resize: vertical;
+    overflow-y: auto;
+    outline: none;
+    box-shadow: none;
+    appearance: auto;
+    -webkit-appearance: auto;
+    cursor: text;
+    pointer-events: auto;
+    user-select: text;
+    -webkit-user-select: text;
+}
+
+.booking-page .booking-field textarea:focus,
+.booking-page textarea[name="eventLocation"]:focus,
+.booking-page textarea[name="message"]:focus {
+    border-color: #e57a35;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(229, 122, 53, 0.12);
+    outline: none;
+}
+
+/* Character counter */
+
+.booking-page .booking-field small {
+    display: block;
+    margin-top: 3px;
+    color: #85899a;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Date fields */
+
+.booking-date-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/* ========================================
+   PHONE NUMBER / COUNTRY CODE
+======================================== */
+
+.booking-phone-row {
+    display: grid;
+    grid-template-columns: 125px minmax(0, 1fr);
+    gap: 10px;
+    min-width: 0;
+}
+
+.booking-phone-row select,
+.booking-phone-row input {
+    width: 100%;
+    min-width: 0;
+}
+
+/* ========================================
+   VALIDATION AND ALERTS
+======================================== */
+
+.booking-page .field-error {
+    margin: 0;
+    color: #d93045;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.booking-error {
+    margin: 0;
+    padding: 14px 16px;
+    border: 1px solid #f4c5cb;
+    border-radius: 10px;
+    background: #fff1f2;
+    color: #b42332;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.booking-success {
+    margin: 0;
+    padding: 14px 16px;
+    border: 1px solid #b9e8cd;
+    border-radius: 10px;
+    background: #edfff4;
+    color: #167443;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ========================================
+   CONFIRM BOOKING BUTTON
+======================================== */
+
+/* Supports both button class names used in Booking.jsx */
+
+.booking-page .confirm-booking-btn,
+.booking-page .booking-submit-btn {
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    min-height: 54px;
+    margin-top: 4px;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(135deg, #f18a42, #d95d22);
+    box-shadow: 0 8px 18px rgba(217, 93, 34, 0.2);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.4;
+    text-align: center;
+    cursor: pointer;
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            filter 0.2s ease;
+}
+
+.booking-page .confirm-booking-btn:hover:not(:disabled),
+.booking-page .booking-submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(217, 93, 34, 0.28);
+    filter: brightness(1.03);
+}
+
+.booking-page .confirm-booking-btn:active:not(:disabled),
+.booking-page .booking-submit-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.booking-page .confirm-booking-btn:focus-visible,
+.booking-page .booking-submit-btn:focus-visible {
+    outline: 3px solid rgba(217, 93, 34, 0.4);
+    outline-offset: 3px;
+}
+
+.booking-page .confirm-booking-btn:disabled,
+.booking-page .booking-submit-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* ========================================
+   VENUE LOCATION DISPLAY
+======================================== */
+
+.booking-page .booking-venue-location {
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+    border: 1px solid #e6e7ef;
+    border-radius: 10px;
+    background: #f8f8fc;
+}
+
+.booking-page .booking-venue-location strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #34384d;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.booking-page .booking-venue-location p {
+    margin: 0 0 8px;
+    color: #292d42;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.booking-page .booking-venue-location small {
+    color: #73778b;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* ========================================
+   LOADING / EMPTY STATE
+======================================== */
+
+.booking-loading {
+    display: flex;
+    min-height: 55vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: #f7f7fb;
+    color: #555a70;
+    text-align: center;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+           /* Prevent textarea resizing */
+       .booking-page .booking-field textarea,
+       .booking-page textarea[name="eventLocation"],
+       .booking-page textarea[name="message"] {
+           resize: none;
+       }
+
+

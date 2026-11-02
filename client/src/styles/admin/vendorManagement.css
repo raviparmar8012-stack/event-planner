@@ -1,0 +1,473 @@
+/* ==========================================
+   VENDOR MANAGEMENT
+========================================== */
+
+.vendor-management-page {
+    min-height: 100vh;
+    padding: 38px;
+    background: #f8f5f0;
+    color: #172033;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.vendor-page-header {
+    margin-bottom: 28px;
+}
+
+.back-dashboard-btn {
+    border: 0;
+    padding: 0;
+    margin-bottom: 22px;
+    background: transparent;
+    color: #f97316;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.vendor-page-kicker {
+    margin: 0 0 7px;
+    color: #f97316;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.vendor-page-header h1 {
+    margin: 0;
+    font-size: 31px;
+    letter-spacing: -1px;
+}
+
+.vendor-page-header p:last-child {
+    margin: 9px 0 0;
+    color: #718096;
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   STATS
+========================================== */
+
+.vendor-management-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.vendor-stat-card {
+    padding: 20px;
+    background: white;
+    border: 1px solid #e7e9ee;
+}
+
+.vendor-stat-card span {
+    display: block;
+    color: #718096;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.vendor-stat-card strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+
+.vendor-stat-card.pending strong {
+    color: #d97706;
+}
+
+.vendor-stat-card.approved strong {
+    color: #16a34a;
+}
+
+.vendor-stat-card.rejected strong {
+    color: #dc2626;
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.vendor-message {
+    margin-bottom: 18px;
+    padding: 13px 16px;
+    background: #fff7ed;
+    border-left: 3px solid #f97316;
+    color: #9a3412;
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   PANEL
+========================================== */
+
+.vendor-management-panel {
+    background: white;
+    border: 1px solid #e7e9ee;
+}
+
+.vendor-panel-header {
+    padding: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #e7e9ee;
+}
+
+.panel-label {
+    margin: 0 0 6px;
+    color: #f97316;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.vendor-panel-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/* ==========================================
+   CONTROLS
+========================================== */
+
+.vendor-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.vendor-controls input,
+.vendor-controls select {
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid #dfe3e8;
+    background: white;
+    color: #172033;
+    font-size: 11px;
+    outline: none;
+}
+
+.vendor-controls input {
+    width: 220px;
+}
+
+.vendor-controls select {
+    width: 140px;
+}
+
+.vendor-controls input:focus,
+.vendor-controls select:focus {
+    border-color: #f97316;
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.vendor-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.vendor-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+.vendor-table th {
+    padding: 14px 20px;
+    background: #fafbfc;
+    color: #7a8493;
+    font-size: 9px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid #e7e9ee;
+}
+
+.vendor-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #edf0f3;
+    color: #4b5563;
+    font-size: 10px;
+}
+
+.vendor-table tbody tr {
+    transition: 0.2s ease;
+}
+
+.vendor-table tbody tr:hover {
+    background: #fffaf6;
+}
+
+
+/* ==========================================
+   VENDOR NAME
+========================================== */
+
+.vendor-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.vendor-avatar {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b1220;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.vendor-name-cell strong {
+    display: block;
+    color: #172033;
+    font-size: 11px;
+}
+
+.vendor-name-cell span {
+    display: block;
+    margin-top: 4px;
+    color: #98a1ae;
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   ROLE
+========================================== */
+
+.role-text {
+    color: #64748b;
+    font-size: 10px;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.vendor-status {
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 8px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.vendor-status.pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.vendor-status.approved {
+    background: #f0fdf4;
+    color: #15803d;
+}
+
+.vendor-status.rejected {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.vendor-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.approve-btn,
+.reject-btn {
+    min-height: 30px;
+    padding: 0 10px;
+    border: 0;
+    font-size: 9px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.approve-btn {
+    background: #0b1220;
+    color: white;
+}
+
+.approve-btn:hover {
+    background: #f97316;
+}
+
+.reject-btn {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.reject-btn:hover {
+    background: #fee2e2;
+}
+
+.approve-btn:disabled,
+.reject-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.action-complete {
+    color: #15803d;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.vendor-loading {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #718096;
+}
+
+.loading-spinner {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 12px;
+    border: 3px solid #e5e7eb;
+    border-top-color: #f97316;
+    border-radius: 50%;
+    animation: vendorSpin 0.8s linear infinite;
+}
+
+.vendor-loading p {
+    margin: 0;
+    font-size: 11px;
+}
+
+@keyframes vendorSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ==========================================
+   EMPTY
+========================================== */
+
+.vendor-empty {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.vendor-empty > div {
+    margin-bottom: 12px;
+    color: #f97316;
+    font-size: 28px;
+}
+
+.vendor-empty h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.vendor-empty p {
+    margin: 7px 0 0;
+    color: #718096;
+    font-size: 10px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .vendor-management-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vendor-panel-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .vendor-controls {
+        width: 100%;
+    }
+
+    .vendor-controls input {
+        flex: 1;
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .vendor-management-page {
+        padding: 22px 15px;
+    }
+
+    .vendor-page-header h1 {
+        font-size: 25px;
+    }
+
+    .vendor-management-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vendor-stat-card {
+        padding: 16px;
+    }
+
+    .vendor-stat-card strong {
+        font-size: 23px;
+    }
+
+    .vendor-panel-header {
+        padding: 18px;
+    }
+
+    .vendor-controls {
+        flex-direction: column;
+    }
+
+    .vendor-controls input,
+    .vendor-controls select {
+        width: 100%;
+    }
+
+}

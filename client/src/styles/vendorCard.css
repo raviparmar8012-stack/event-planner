@@ -1,0 +1,52 @@
+.vendor-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.vendor-card:hover{
+    transform:translateY(-10px);
+}
+
+.vendor-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.vendor-content{
+    padding:20px;
+}
+
+.vendor-category{
+    color:#6C63FF;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.vendor-content p{
+    margin:8px 0;
+    color:#555;
+}
+
+.vendor-content h4{
+    margin:15px 0;
+    color:#222;
+}
+
+.vendor-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#6C63FF;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.vendor-btn:hover{
+    background:#5147e5;
+}

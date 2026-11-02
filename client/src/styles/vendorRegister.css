@@ -1,0 +1,569 @@
+/* =========================================
+   EVENT HUB — VENDOR REGISTRATION
+   Deep Navy / Editorial Design
+========================================= */
+
+.vendor-register-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: stretch;
+
+    padding: 24px;
+
+    background: #0b1220;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.vendor-register-card {
+    width: 100%;
+    max-width: 1380px;
+
+    min-height: calc(100vh - 48px);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.05fr 0.95fr;
+
+    overflow: hidden;
+
+    background: #f8f5f0;
+
+    border-radius: 4px;
+
+    box-shadow:
+            0 30px 80px rgba(0, 0, 0, 0.28);
+}
+
+
+/* =========================================
+   LEFT BRAND PANEL
+========================================= */
+
+.vendor-register-brand {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 55px;
+
+    min-height: 650px;
+
+    background:
+            linear-gradient(
+                    135deg,
+                    rgba(11, 18, 32, 0.98),
+                    rgba(11, 18, 32, 0.88)
+            );
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+.vendor-register-brand::after {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -180px;
+    bottom: -180px;
+
+    border-radius: 50%;
+
+    background: rgba(249, 115, 22, 0.10);
+
+    filter: blur(10px);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.vendor-brand-logo {
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+
+.vendor-brand-logo span {
+    color: #f97316;
+}
+
+
+/* =========================================
+   BRAND CONTENT
+========================================= */
+
+.vendor-brand-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 570px;
+}
+
+
+.vendor-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: #f97316;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+
+.vendor-brand-content h1 {
+    margin: 0;
+
+    font-size: clamp(48px, 5vw, 76px);
+
+    line-height: 0.98;
+
+    letter-spacing: -3px;
+
+    font-weight: 600;
+}
+
+
+.vendor-brand-content h1 span {
+    color: #f97316;
+}
+
+
+.vendor-brand-content p {
+    max-width: 450px;
+
+    margin-top: 28px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   BRAND FOOTER
+========================================= */
+
+.vendor-brand-footer {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 12px;
+}
+
+
+.vendor-brand-footer::before {
+    content: "";
+
+    width: 38px;
+
+    height: 1px;
+
+    background: #f97316;
+}
+
+
+/* =========================================
+   FORM SECTION
+========================================= */
+
+.vendor-register-form-section {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 60px;
+
+    background: #f8f5f0;
+}
+
+
+.vendor-register-form-wrapper {
+    width: 100%;
+
+    max-width: 430px;
+
+    animation: vendorRegisterReveal 0.7s ease;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.vendor-register-heading {
+    margin-bottom: 32px;
+}
+
+
+.vendor-register-heading .vendor-eyebrow {
+    margin-bottom: 12px;
+}
+
+
+.vendor-register-heading h2 {
+    margin: 0;
+
+    color: #0b1220;
+
+    font-size: 40px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.8px;
+
+    font-weight: 600;
+}
+
+
+.vendor-register-heading p {
+    margin-top: 12px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   SUCCESS / ERROR
+========================================= */
+
+.vendor-success {
+    margin-bottom: 20px;
+
+    padding: 13px 15px;
+
+    background: rgba(22, 163, 74, 0.07);
+
+    border-left: 2px solid #16a34a;
+
+    color: #15803d;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.vendor-error {
+    margin-bottom: 20px;
+
+    padding: 13px 15px;
+
+    background: rgba(220, 38, 38, 0.06);
+
+    border-left: 2px solid #dc2626;
+
+    color: #b91c1c;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.vendor-register-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+.vendor-form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.vendor-form-group label {
+    color: #0b1220;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.vendor-form-group input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 0;
+
+    border: none;
+
+    border-bottom: 1px solid #bfc1c4;
+
+    outline: none;
+
+    border-radius: 0;
+
+    background: transparent;
+
+    color: #0b1220;
+
+    font-size: 14px;
+
+    transition:
+            border-color 0.25s ease;
+}
+
+
+.vendor-form-group input::placeholder {
+    color: #9ca3af;
+}
+
+
+.vendor-form-group input:focus {
+    border-bottom-color: #f97316;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.vendor-register-submit {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 8px;
+
+    padding: 17px 20px;
+
+    border: none;
+
+    background: #f97316;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+            background 0.25s ease,
+            transform 0.25s ease;
+}
+
+
+.vendor-register-submit:hover {
+    background: #ea580c;
+
+    transform: translateY(-2px);
+}
+
+
+.vendor-register-submit span {
+    font-size: 20px;
+
+    line-height: 1;
+
+    transition: transform 0.25s ease;
+}
+
+
+.vendor-register-submit:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   BOTTOM LINKS
+========================================= */
+
+.vendor-login-text,
+.vendor-customer-text {
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+.vendor-login-text {
+    margin-top: 26px;
+}
+
+
+.vendor-customer-text {
+    margin-top: 12px;
+}
+
+
+.vendor-login-text span,
+.vendor-customer-text span {
+    margin-left: 5px;
+
+    color: #0b1220;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.vendor-login-text span:hover,
+.vendor-customer-text span:hover {
+    color: #f97316;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes vendorRegisterReveal {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .vendor-register-page {
+        padding: 0;
+    }
+
+    .vendor-register-card {
+        min-height: 100vh;
+
+        grid-template-columns: 1fr;
+
+        border-radius: 0;
+    }
+
+    .vendor-register-brand {
+        min-height: 360px;
+
+        padding: 35px;
+    }
+
+    .vendor-brand-content h1 {
+        font-size: 52px;
+    }
+
+    .vendor-register-form-section {
+        padding: 50px 30px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .vendor-register-brand {
+        min-height: 320px;
+
+        padding: 28px;
+    }
+
+    .vendor-brand-content h1 {
+        font-size: 42px;
+
+        letter-spacing: -2px;
+    }
+
+    .vendor-brand-content p {
+        font-size: 14px;
+    }
+
+    .vendor-register-form-section {
+        padding: 40px 22px;
+    }
+
+    .vendor-register-heading h2 {
+        font-size: 34px;
+    }
+}

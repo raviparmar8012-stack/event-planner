@@ -1,0 +1,443 @@
+/* ================================
+   EVENT HUB LOGIN
+   Premium Navy + Orange Theme
+================================ */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    background:
+            radial-gradient(
+                    circle at top left,
+                    rgba(249, 115, 22, 0.12),
+                    transparent 35%
+            ),
+            radial-gradient(
+                    circle at bottom right,
+                    rgba(15, 23, 42, 0.15),
+                    transparent 40%
+            ),
+            #f8f5f0;
+}
+
+
+/* ================================
+   LOGIN CARD
+================================ */
+
+.login-card {
+    width: 100%;
+    max-width: 460px;
+
+    padding: 44px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(11, 18, 32, 0.08);
+
+    border-radius: 24px;
+
+    box-shadow:
+            0 25px 70px rgba(11, 18, 32, 0.12);
+
+    animation: loginFade 0.6s ease;
+}
+
+
+/* ================================
+   BRAND
+================================ */
+
+.login-brand {
+    font-size: 25px;
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+    color: #0b1220;
+
+    margin-bottom: 34px;
+}
+
+.login-brand span {
+    color: #f97316;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.login-heading {
+    margin-bottom: 28px;
+}
+
+.login-heading h1 {
+    margin: 0 0 8px;
+
+    font-size: 34px;
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+
+    color: #0b1220;
+}
+
+.login-heading p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================
+   ROLE SELECTOR
+================================ */
+
+.role-selector {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+
+    padding: 5px;
+
+    margin-bottom: 24px;
+
+    background: #f1f3f5;
+
+    border-radius: 12px;
+}
+
+.role-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #64748b;
+
+    padding: 11px 8px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+            background 0.25s ease,
+            color 0.25s ease,
+            transform 0.25s ease;
+}
+
+.role-btn:hover {
+    color: #0b1220;
+}
+
+.role-btn.active {
+    background: #0b1220;
+
+    color: #ffffff;
+
+    box-shadow:
+            0 4px 12px rgba(11, 18, 32, 0.15);
+}
+
+.role-btn:active {
+    transform: scale(0.97);
+}
+
+
+/* ================================
+   ERROR
+================================ */
+
+.login-error {
+    margin-bottom: 20px;
+
+    padding: 12px 14px;
+
+    border-radius: 10px;
+
+    background: #fff1f2;
+
+    border: 1px solid #fecdd3;
+
+    color: #be123c;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.login-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #0b1220;
+}
+
+
+/* ================================
+   PASSWORD LABEL
+================================ */
+
+.password-label {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.forgot-link {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #f97316;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.forgot-link:hover {
+    color: #ea580c;
+
+    text-decoration: underline;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+.form-group input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 15px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 11px;
+
+    background: #ffffff;
+
+    color: #0b1220;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+            border-color 0.25s ease,
+            box-shadow 0.25s ease,
+            background 0.25s ease;
+}
+
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+.form-group input:focus {
+    border-color: #f97316;
+
+    background: #fff;
+
+    box-shadow:
+            0 0 0 4px rgba(249, 115, 22, 0.10);
+}
+
+
+/* ================================
+   LOGIN BUTTON
+================================ */
+
+.login-submit {
+    width: 100%;
+
+    margin-top: 4px;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #f97316;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+            background 0.25s ease,
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+}
+
+.login-submit:hover {
+    background: #ea580c;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+            0 10px 25px rgba(249, 115, 22, 0.25);
+}
+
+.login-submit:active {
+    transform: translateY(0);
+}
+
+.login-submit span {
+    font-size: 19px;
+
+    transition: transform 0.25s ease;
+}
+
+.login-submit:hover span {
+    transform: translateX(4px);
+}
+
+
+/* ================================
+   REGISTER
+================================ */
+
+.register-text {
+    margin-top: 26px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.register-text span {
+    margin-left: 5px;
+
+    color: #f97316;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.register-text span:hover {
+    text-decoration: underline;
+}
+
+.login-success {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ================================
+   ANIMATION
+================================ */
+
+@keyframes loginFade {
+
+    from {
+        opacity: 0;
+
+        transform:
+                translateY(20px)
+                scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+                translateY(0)
+                scale(1);
+    }
+}
+
+
+.forgot-back-btn {
+    display: block;
+    width: 100%;
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: transparent;
+    color: #4f46e5;
+    border: 1px solid #4f46e5;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.forgot-back-btn:hover {
+    background: #4f46e5;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.forgot-back-btn:focus-visible {
+    outline: 3px solid rgba(79, 70, 229, 0.3);
+    outline-offset: 3px;
+}
+
+
